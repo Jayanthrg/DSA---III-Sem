@@ -3,7 +3,7 @@ This contains all programs from lab and based on theory concepts of Data Structu
 
 Programs Incl. :-
 1. Array Operation,
-2. Pattern Matching,
+2. Pattern Matching & Replacement,
 3. Stack Operation,
 4. Infix To Postfix,
 5. Stack Applications (Suffix Exp. & Tower Of Hanoi),
