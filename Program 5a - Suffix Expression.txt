@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+char pofx[30],sym;
+int s[30],top=-1,op1,op2;
+int op(int op1,char sym,int op2)
+{
+    switch(sym)
+    {
+        case '+':return op1+op2;
+        case '-':return op1-op2;
+        case '*':return op1*op2;
+        case '/':return op1/op2;
+        case '%':return op1%op2;
+        case '$':
+        case '^':return pow(op1,op2);
+    }
+    return 0;
+}
+int main()
+{
+    printf("\nEnter the postfix expression: ");
+    scanf("%s",pofx);
+    for(int i=0;i<strlen(pofx);i++)
+    {
+        sym=pofx[i];
+        if(pofx[i]>='0' && pofx[i]<='9')
+        {
+            s[++top]=sym-'0';
+        }
+        else
+        {
+            op2=s[top--];
+            op1=s[top--];
+            s[++top]=op(op1,sym,op2);
+        }
+    }
+    printf("\nThe result is %d\n",s[top]);
+    return 0;
+}
