@@ -13,3 +13,7 @@ Programs Incl. :-
 8. Doubly Linked List (DLL),
 9 - a. Singly Circular Linked List (SCLL),
     b. Sum Of 2 Polynomials.
+10. Binary Search Tree (BST).
+11 - a. Graph Operation,
+     b. Print Nodes In Diagraph Using BFS Method.
+12. Hashing Technique.     
